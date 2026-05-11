@@ -45,7 +45,7 @@ Raw signal (complex baseband)
 ┌───────────────────┐
 │   Acquisition     │  FFT-based parallel code-phase search
 │  acquisition.py   │  Doppler search: ±5000 Hz, 500 Hz steps
-└────────┬──────────┘  Detection threshold: peak/mean > 2.5
+└────────┬──────────┘  Detection threshold: peak/mean > 2.5  (PRN 1 achieved 236)
 │
 ▼
 ┌───────────────────┐
@@ -73,7 +73,7 @@ Raw signal (complex baseband)
 |---|---|---|
 | PRN generator | 1023-chip Gold codes, all 32 SVs | Peak = 1023, sidelobe ≤ 78 ✅ |
 | Signal simulator | Complex baseband, 200 ms | 1,000,000 samples at 5 MHz ✅ |
-| Acquisition | PRN 1 detected at +1500 Hz Doppler | Peak/mean ratio >> 2.5 ✅ |
+| Acquisition | PRN 1 detected at +1500 Hz Doppler | Peak/mean ratio = 236 ✅ |
 | DLL tracking | Code phase locked | 0.04 chip residual error ✅ |
 | PLL tracking | Carrier locked | 0.62 Hz Doppler error ✅ |
 
